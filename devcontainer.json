@@ -1,0 +1,6 @@
+{
+  "name": "grincontainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  }
+}
