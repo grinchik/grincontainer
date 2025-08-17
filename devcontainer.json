@@ -2,5 +2,23 @@
   "name": "grincontainer",
   "build": {
     "dockerfile": "Dockerfile"
-  }
+  },
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}/.claude",
+            "target": "/root/.claude",
+            "type": "bind"
+        }
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Anthropic.claude-code"
+            ]
+        }
+    },
+    "containerEnv": {
+        // https://github.com/anthropics/claude-code/blob/b6f507833db3bc29eef739657453c32c4687b188/.devcontainer/devcontainer.json#L46
+        "CLAUDE_CONFIG_DIR": "/root/.claude"
+    }
 }

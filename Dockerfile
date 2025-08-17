@@ -35,4 +35,10 @@ RUN \
         -f \
         /var/lib/apt/lists/* \
     && \
+    # https://docs.anthropic.com/en/docs/claude-code/setup#standard-installation
+    npm \
+        install \
+            --global \
+            @anthropic-ai/claude-code \
+    && \
     true;
