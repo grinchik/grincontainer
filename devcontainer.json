@@ -14,6 +14,7 @@
         "vscode": {
             "extensions": [
                 "Anthropic.claude-code"
+                , "ms-python.python"
             ]
         }
     },
