@@ -27,6 +27,9 @@ RUN \
             --no-install-recommends \
             git=1:2.43.0-1ubuntu7.3 \
             nodejs=22.18.0-1nodesource1 \
+            make=4.3-4.1build2 \
+            gpg=2.4.4-2ubuntu17.3 \
+            xz-utils=5.6.1+really5.4.5-1ubuntu0.2 \
     && \
     apt-get \
         clean \
