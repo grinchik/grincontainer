@@ -1,4 +1,5 @@
-FROM ubuntu:noble-20250716
+# https://hub.docker.com/_/ubuntu
+FROM ubuntu:noble-20251001
 
 RUN \
     apt-get \
