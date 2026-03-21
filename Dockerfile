@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/ubuntu
-FROM ubuntu:noble-20251013
+FROM ubuntu:noble-20260217
 
 RUN \
     apt-get \
@@ -10,7 +10,7 @@ RUN \
             --assume-yes \
             --no-install-recommends \
             ca-certificates=20240203 \
-            curl=8.5.0-2ubuntu10.6 \
+            curl=8.5.0-2ubuntu10.8 \
     && \
     curl \
         -fsSL \
