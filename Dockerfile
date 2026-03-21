@@ -30,6 +30,8 @@ RUN \
             make=4.3-4.1build2 \
             gpg=2.4.4-2ubuntu17.4 \
             xz-utils=5.6.1+really5.4.5-1ubuntu0.2 \
+            python3-pip=24.0+dfsg-1ubuntu1.3 \
+            python3-venv=3.12.3-0ubuntu2.1 \
     && \
     apt-get \
         clean \
